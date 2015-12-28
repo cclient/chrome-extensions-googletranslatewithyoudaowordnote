@@ -34,7 +34,7 @@ google translate with youdao wordnote 带有道生词本的google翻译，由原
 
 ##有道生词本（http://dict.youdao.com/wordbook/wordlist）比google（https://translate.google.com/）的"好词好句"好用，且有多平台应用，便用有道的生词本
 
-主要是因为之前一个项目有的有道生词本，为了简单，有心的改为google的好词好句
+主要是因为之前一个项目有的有道生词本（api比google的简单），为了简单，有心的改为google的好词好句,可以自已动手
 
 ##为求简单(牺牲体验),直接链接到youdao官方的login页获取cookie
 
