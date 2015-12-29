@@ -4403,7 +4403,12 @@
                 chrome.runtime.sendMessage(posteventloopdata, function (response) {
                     console.log(response);
                     if(response&&!response.error){
-                        shadowroot.getElementById("btnaddword").innerText = "添加成功";
+                        console.log(response.error);
+                        if(resopnse.result=="addsuccess"){
+                            shadowroot.getElementById("btnaddword").innerText = "Add Success";
+                        }else if(resopnse.result=="delsuccess"){
+                            shadowroot.getElementById("btndelword").innerText = "Del Success";
+                        }
                     }
                 });
             }else{

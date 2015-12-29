@@ -1057,8 +1057,10 @@
                         if (xhr.status == 200) {
                             var jinfo = JSON.parse(xhr.responseText);
                             //添加成功和删除成功的返回值不同
-                            if (jinfo.message == "adddone" || jinfo.success == "1") {
-                                sendResponse({result: "success"});
+                            if (jinfo.message == "adddone") {
+                                sendResponse({result: "addsuccess"});
+                            } else if (jinfo.success == "1") {
+                                sendResponse({result: "delsuccess"});
                             } else if (jinfo.message == "nouser") {
                                 showWindow("http://account.youdao.com/login");
                             } else {
@@ -1084,7 +1086,7 @@
                     sendResponse({result: "success"});
                     return true;
                 });
-            }else if (message.action == "login") {
+            } else if (message.action == "login") {
                 showWindow("http://account.youdao.com/login");
             }
             return true;
