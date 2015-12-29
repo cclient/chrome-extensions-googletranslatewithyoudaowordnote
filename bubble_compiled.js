@@ -4145,7 +4145,7 @@
             //b += '</select></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + uf(a.query) + '</div><br><div class="gtx-language">' + uf(a.Ub) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' +
             //    uf(a.Fb) + "</div>";
 //todo add +word -word
-            b += '</select>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btnaddword">+WordNote</a>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btndelword">-WordNote</a></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + uf(a.query) + '</div><br><div class="gtx-language">' + uf(a.Ub) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' +
+            b += '</select>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btnaddword">+WordNote</a></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + uf(a.query) + '</div><br><div class="gtx-language">' + uf(a.Ub) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' +
                 uf(a.Fb) + "</div>";
             if (a.kb) {
                 b += '<table style="width: 95%">';
@@ -4388,7 +4388,6 @@
         //点击事件 shadow-root下的事件实际触发的是寄主的事件
         if (event.target.getAttribute("id") == "gtx-host") {
             var shadowroot=event.target.shadowRoot;
-
             var truecontent = shadowroot.getElementById("translation");
             var divs = truecontent.getElementsByTagName("div");
             var word=divs[3].innerText;
@@ -4397,17 +4396,19 @@
             if(wordcounts<3){
                 //词/詞组
                 var posteventloopdata = {
-                    action: "addword",
                     data: word
                 };
+                //todo 事件监听在shandowroot对象,不好区别是点击的+还是- 用是否按altkey区分
+                posteventloopdata.action=(event.altKey==true)?"delword":"addword";
                 chrome.runtime.sendMessage(posteventloopdata, function (response) {
+                    var clickdom=shadowroot.getElementById("btnaddword");
                     console.log(response);
                     if(response&&!response.error){
                         console.log(response.error);
-                        if(resopnse.result=="addsuccess"){
-                            shadowroot.getElementById("btnaddword").innerText = "Add Success";
-                        }else if(resopnse.result=="delsuccess"){
-                            shadowroot.getElementById("btndelword").innerText = "Del Success";
+                        if(response.result=="addsuccess"){
+                            clickdom.innerText = "Add Success";
+                        }else if(response.result=="delsuccess"){
+                            clickdom.innerText = "Del Success";
                         }
                     }
                 });

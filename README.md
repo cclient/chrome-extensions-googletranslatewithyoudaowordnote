@@ -1,5 +1,7 @@
 # chrome-extensions-googletranslatewithyoudaowordnote
 google translate with youdao wordnote 带有道生词本的google翻译，由原版google翻译 扩展而来，侵删
+点击是添加生词
+alt+点击是删除生词
 
 
 ##加载方式

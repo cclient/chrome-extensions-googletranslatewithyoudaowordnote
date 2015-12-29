@@ -3395,7 +3395,7 @@
             //b += '</select></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + V(a.query) + '</div><br><div class="gtx-language">' + V(a.Bb) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' +
             //    V(a.lb) + "</div>";
             //todo add +word -word
-            b += '</select>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btnaddword">+WordNote</a>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btndelword">-WordNote</a></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + V(a.query) + '</div><br><div class="gtx-language">' + V(a.Bb) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + V(a.lb) + "</div>";
+            b += '</select>&nbsp&nbsp&nbsp&nbsp<a href="javascript:void(0)" id="btnaddword">+WordNote</a></div><div class="gtx-source-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + V(a.query) + '</div><br><div class="gtx-language">' + V(a.Bb) + '</div><div class="gtx-target-audio"><div class="jfk-button-img"></div></div><div class="gtx-body">' + V(a.lb) + "</div>";
             if (a.Wa) {
                 b += '<table style="width: 95%">';
                 c = a.Wa;
