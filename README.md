@@ -5,8 +5,6 @@ https://github.com/cclient/chrome-extensions-youdaowithwordnode 有道笔记版�
 点击是添加生词
 alt+点击是删除生词
 
-##加载方式
-
 #加载方式
 
 #快速加载
