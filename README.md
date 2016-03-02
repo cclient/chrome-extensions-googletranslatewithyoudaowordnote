@@ -9,7 +9,7 @@ alt+点击是删除生词
 
 #快速加载
 
-1下载chrome-extensions-youdaowithwordnode.crx(项目根目录,右击链接另存为)
+1下载chrome-extensions-googletranslatewithyoudaowordnote.crx(项目根目录,右击链接另存为)
 
 2Chrome打开 chrome://extensions/
 
