@@ -1,37 +1,37 @@
 {
-   "background": {
-      "persistent": false,
-      "scripts": [ "injection.js", "main_compiled.js" ]
-   },
-   "browser_action": {
-      "default_icon": {
-         "19": "icons/19.png",
-         "38": "icons/38.png"
-      },
-      "default_popup": "popup.html",
-      "default_title": "__MSG_2509634311667449183__"
-   },
-   "content_scripts": [ {
-      "all_frames": true,
-      "css": [ "bubble_gss.css" ],
-      "js": [ "bubble_compiled.js" ],
-      "matches": [ "http://*/*", "https://*/*" ]
-   } ],
-   "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
-   "default_locale": "en",
-   "description": "__MSG_5636646071825253269__",
-   "icons": {
-      "128": "icons/128.png",
-      "16": "icons/16.png",
-      "19": "icons/19.png",
-      "32": "icons/32.png",
-      "38": "icons/38.png",
-      "48": "icons/48.png"
-   },   
-   "manifest_version": 2,
-   "name": "__MSG_8969005060131950570__",
-   "options_page": "options.html",
-   "permissions": ["cookies" , "activeTab", "contextMenus", "storage","http://*/*", "https://*/*"],
-   "version": "2.0.6",
-   "web_accessible_resources": [ "popup_css_compiled.css", "options.html" ]
+    "background": {
+        "persistent": false,
+        "scripts": ["injection.js", "main_compiled.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/19.png",
+            "38": "icons/38.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "__MSG_2509634311667449183__"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "css": ["bubble_gss.css"],
+        "js": ["bubble_compiled.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }],
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://translate.googleapis.com; object-src 'self'",
+    "default_locale": "en",
+    "description": "__MSG_5636646071825253269__",
+    "icons": {
+        "128": "icons/128.png",
+        "16": "icons/16.png",
+        "19": "icons/19.png",
+        "32": "icons/32.png",
+        "38": "icons/38.png",
+        "48": "icons/48.png"
+    },
+    "manifest_version": 2,
+    "name": "__MSG_8969005060131950570__",
+    "options_page": "options.html",
+    "permissions": ["cookies", "*://dict.youdao.com/", "*://.youdao.com/", "*://*.youdao.com/", "activeTab", "contextMenus", "storage", "http://*/*", "https://*/*"],
+    "version": "2.0.6",
+    "web_accessible_resources": ["popup_css_compiled.css", "options.html"]
 }
