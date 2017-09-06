@@ -10,11 +10,11 @@ google translate with youdao wordnote 带有道生词本的google翻译，由原
 
 # 快速加载(普通用户，部分chrome版本不可用，因非官方应用，会有报警，需要允许）
 
-1 下载 [chrome-extensions-youdaowithwordnode.crx文件](https://github.com/cclient/chrome-extensions-youdaowithwordnode/releases/download/v1.55_0/chrome-extensions-youdaowithwordnode.crx)
+1 下载 [chrome-extensions-googletranslatewithyoudaowordnote.crx文件](https://github.com/cclient/chrome-extensions-googletranslatewithyoudaowordnote/releases/download/2.0.6/chrome-extensions-googletranslatewithyoudaowordnote.crx)
 
 2 Chrome打开 chrome://extensions/
 
-3 拖拽chrome-extensions-youdaowithwordnode.crx 至 Chrome chrome://extensions/页
+3 拖拽chrome-extensions-googletranslatewithyoudaowordnote.crx 至 Chrome chrome://extensions/页
 
 # 源文件加载（开发者）
 
