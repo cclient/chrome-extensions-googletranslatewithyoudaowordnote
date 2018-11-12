@@ -32,6 +32,6 @@
     "name": "__MSG_8969005060131950570__",
     "options_page": "options.html",
     "permissions": ["cookies", "*://dict.youdao.com/", "*://.youdao.com/", "*://*.youdao.com/", "activeTab", "contextMenus", "storage", "http://*/*", "https://*/*"],
-    "version": "2.0.6",
+    "version": "2.0.7",
     "web_accessible_resources": ["popup_css_compiled.css", "options.html"]
 }
